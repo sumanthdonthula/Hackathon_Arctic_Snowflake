@@ -1,5 +1,7 @@
 # Hackathon_Arctic_Snowflake
 
+#Steps to follow to replicate the app
+
 Use Accountadmin as role for all the tasks
 
 Step 1:
