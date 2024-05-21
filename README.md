@@ -8,7 +8,9 @@ Step 1:
 run file preprocess and vectorize bronco manual.sql until step-1
 
 Step 2:
-place bronco.pdf in external_stage in Data->HACKATHON.PUBLIC ->Stages-> EXTERNAL_STAGE-> bronco.pdf
+place bronco.pdf 
+from link: https://drive.google.com/file/d/14HOleVlBVlsQMKI_ClqqKEntZEap_UeM/view?usp=sharing
+in external_stage in Data->HACKATHON.PUBLIC ->Stages-> EXTERNAL_STAGE-> bronco.pdf
 
 Step 3:
 run After Step-2
