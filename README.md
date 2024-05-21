@@ -10,7 +10,7 @@ Then the page content is transformed into vectors using: SNOWFLAKE.CORTEX.EMBED_
 
 This is saved in table "BRONCO_PAGE_CONTENT_WITH_VECT_EMB"
 
-The when we get query from streamlit app Cosine Similarity is used to filter pages from the cevtor embeddings of pages and top 7 pages are picked as context to pass through arctic model.
+The when we get query from streamlit app Cosine Similarity is used to filter pages from the cevtor embeddings of pages and top 3 pages are picked as context to pass through arctic model.
 
 function VECTOR_COSINE_SIMILARITY(vector_embeddings,SNOWFLAKE.CORTEX.EMBED_TEXT_768('snowflake-arctic-embed-m','{query}')) is being used to do this.
 
