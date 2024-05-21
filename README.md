@@ -46,3 +46,9 @@ Step-6:
 Copy Streamlit Files->environment.yml file into the folder where staging for streamlit_app is there. Data->HACKATHON.PUBLIC -> Stages -> "Stage Created for Streamlit App"-> environment.yml
 
 Once the steps are followed, we should be able to get the responses for the queries we have given to the streamlit app by using Arctic and the Context from the Manual->bronco.pdf.
+
+# Prompts
+
+How to turn the headlights on?
+How to change the oil?
+Im at 65,000 miles, is there any upcoming maintenance?
