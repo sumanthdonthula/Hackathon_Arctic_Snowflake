@@ -1,0 +1,17 @@
+File: 'bronco.pdf' we should place this in external stage created as part of the file 'preprocess and vectorize bronoc manual.sql'
+
+The content of manual is read page by page and stored in table "page_content_bronco"
+
+Then the page content is transformed into vectors using: SNOWFLAKE.CORTEX.EMBED_TEXT_768('snowflake-arctic-embed-m', "content") as vector_embeddings
+
+This is saved in table "BRONCO_PAGE_CONTENT_WITH_VECT_EMB"
+
+The when we get query from streamlit app Cosine Similarity is used to filter pages from the cevtor embeddings of pages and top 7 pages are picked as context to pass through arctic model.
+
+function VECTOR_COSINE_SIMILARITY(vector_embeddings,SNOWFLAKE.CORTEX.EMBED_TEXT_768('snowflake-arctic-embed-m','{query}')) is being used to do this.
+
+once this is done context is passed to Arctic through,
+SELECT SNOWFLAKE.CORTEX.COMPLETE('snowflake-arctic','{final_prompt}
+
+The response generated is being summarized using function,
+SELECT SNOWFLAKE.CORTEX.SUMMARIZE('{data}')
