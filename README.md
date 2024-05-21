@@ -49,6 +49,6 @@ Once the steps are followed, we should be able to get the responses for the quer
 
 # Prompts
 
-How to turn the headlights on?
-How to change the oil?
-Im at 65,000 miles, is there any upcoming maintenance?
+1.How to turn the headlights on?
+2.How to change the oil?
+3.Im at 65,000 miles, is there any upcoming maintenance?
